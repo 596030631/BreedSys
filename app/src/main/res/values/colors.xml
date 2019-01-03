@@ -8,4 +8,6 @@
     <color name="background">#fa5464</color>
     <color name="background_page1_0_title">#9bd1b3</color>
     <color name="cursorColor">#add</color>
+    <color name="blackColor">#000</color>
+
 </resources>

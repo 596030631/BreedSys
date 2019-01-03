@@ -18,12 +18,10 @@ import sj.app.view.activity.Act_Page1_4;
 import sj.app.view.activity.Act_Page1_5;
 import sj.app.view.activity.Act_Page1_6;
 import sj.app.view.activity.Act_Page1_7;
-
 public class AdapterPage1 extends RecyclerView.Adapter<AdapterPage1.ViewHolder> {
     private List<Page1Entry> mList;
     private Context mContext;
     private View view;
-
     public AdapterPage1(List<Page1Entry> list, Context context) {
             this.mList = list;
             mContext = context;
@@ -47,6 +45,20 @@ public class AdapterPage1 extends RecyclerView.Adapter<AdapterPage1.ViewHolder> 
                 goActivity(position);
             }
         });
+    }
+    @Override
+    public int getItemCount() {
+        return mList.size();
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+        private TextView mText;
+        private ImageView mImg;
+        public ViewHolder(View itemView) {
+            super(itemView);
+            mText = itemView.findViewById(R.id.item_name);
+            mImg = itemView.findViewById(R.id.item_png);
+        }
     }
     private void goActivity(int position) {
         Context context = view.getContext();
@@ -75,19 +87,6 @@ public class AdapterPage1 extends RecyclerView.Adapter<AdapterPage1.ViewHolder> 
             case 7:
                 context.startActivity(new Intent(context,Act_Page1_7.class));
                 break;
-        }
-    }
-    @Override
-    public int getItemCount() {
-        return mList.size();
-    }
-    class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView mText;
-        private ImageView mImg;
-        public ViewHolder(View itemView) {
-            super(itemView);
-            mText = itemView.findViewById(R.id.item_name);
-            mImg = itemView.findViewById(R.id.item_png);
         }
     }
 }

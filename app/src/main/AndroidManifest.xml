@@ -11,13 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".view.LoginActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".view.activity.HomeActivity"></activity>
         <activity android:name=".view.activity.Act_Page1_0" />
         <activity android:name=".view.activity.Act_Page1_1" />
@@ -27,7 +22,12 @@
         <activity android:name=".view.activity.Act_Page1_5" />
         <activity android:name=".view.activity.Act_Page1_6" />
         <activity android:name=".view.activity.Act_Page1_7" />
-        <activity android:name=".view.activity.Act_Page1_0_add"/>
+        <activity android:name=".view.activity.Act_Page1_0_add">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
