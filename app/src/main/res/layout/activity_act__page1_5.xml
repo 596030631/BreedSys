@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.Act_Page1_5">
+<GridView
+    android:id="@+id/gv_page1_5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</GridView>
+</android.support.constraint.ConstraintLayout>
