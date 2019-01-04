@@ -1,9 +1,11 @@
 <litepal>
     <dbname value="cool_weather"/>
-    <version value="1"/>
+    <version value="2"/>
     <list>
         <mapping class="sj.app.model.entry.Province"/>
         <mapping class="sj.app.model.entry.City"/>
         <mapping class="sj.app.model.entry.County"/>
+
+        <mapping class="sj.app.model.entry.Purchase"/>
     </list>
 </litepal>

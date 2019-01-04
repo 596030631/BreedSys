@@ -14,7 +14,12 @@
         <activity android:name=".view.LoginActivity"/>
 
         <activity android:name=".view.activity.HomeActivity"></activity>
-        <activity android:name=".view.activity.Act_Page1_0" />
+        <activity android:name=".view.activity.Act_Page1_0" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".view.activity.Act_Page1_1" />
         <activity android:name=".view.activity.Act_Page1_2" />
         <activity android:name=".view.activity.Act_Page1_3" />
@@ -22,11 +27,7 @@
         <activity android:name=".view.activity.Act_Page1_5" />
         <activity android:name=".view.activity.Act_Page1_6" />
         <activity android:name=".view.activity.Act_Page1_7" />
-        <activity android:name=".view.activity.Act_Page1_0_add">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        <activity android:name=".view.activity.Act_Page1_0_add_purchase">
         </activity>
     </application>
 

@@ -1,12 +1,10 @@
 package sj.app.view.adapter;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import java.util.List;
-
 import sj.app.R;
 import sj.app.view.other.Tmpe;
 public class AdapterPage1_5 extends BaseAdapter {

@@ -8,11 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.List;
 import sj.app.R;
-import sj.app.model.entry.Page1_0_add_demo1;
-
+import sj.app.model.entry.Purchase;
 public class AdapterPage1_0_add extends RecyclerView.Adapter<AdapterPage1_0_add.MyViewHolder> {
     private  Context mContext;
-    private  List<Page1_0_add_demo1> mList;
+    private  List<Purchase> mList;
     public AdapterPage1_0_add(List list, Context context) {
         this.mList = list;
         mContext = context;
@@ -26,9 +25,10 @@ public class AdapterPage1_0_add extends RecyclerView.Adapter<AdapterPage1_0_add.
     }
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.tv1.setText(""+mList.get(position).getId());
+        position = mList.size()-1-position;
+        holder.tv1.setText(""+mList.get(position).getPur_num());
         holder.tv2.setText(""+mList.get(position).getName());
-        holder.tv3.setText(""+mList.get(position).getNum());
+        holder.tv3.setText(""+mList.get(position).getQuity());
         holder.tv4.setText(""+mList.get(position).getPrice());
         holder.tv5.setText(""+mList.get(position).getAmount());
         holder.tv6.setText(""+mList.get(position).getDate());
