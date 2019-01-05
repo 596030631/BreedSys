@@ -6,73 +6,62 @@
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:paddingRight="15dp"
-        android:background="@color/background_page1_0_title">
-        <LinearLayout
-            android:layout_centerInParent="true"
-            android:id="@+id/refresh"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:padding="5dp"
-            android:gravity="center">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#111"/>
-        </LinearLayout>
+        android:layout_height="40dp"
+        android:paddingRight="15dp">
+
         <LinearLayout
             android:id="@+id/btn_page1_0_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:padding="5dp"
             android:gravity="center">
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:background="@drawable/page1_0_back"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/btn_page1_0_add"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:padding="5dp"
             android:layout_alignParentRight="true">
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:background="@drawable/page1_0_add"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/btn_page1_0_edit"
             android:layout_marginRight="40dp"
             android:layout_toLeftOf="@+id/btn_page1_0_add"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:padding="5dp"
             android:layout_alignParentRight="true">
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:background="@drawable/page1_0_edit"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/btn_page1_0_delete"
             android:layout_marginRight="85dp"
             android:layout_toLeftOf="@+id/btn_page1_0_edit"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:padding="5dp"
             android:layout_alignParentRight="true">
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:background="@drawable/page1_0_delete"/>
         </LinearLayout>
     </RelativeLayout>
     <HorizontalScrollView
+        android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -127,5 +116,4 @@
             </android.support.v7.widget.RecyclerView>
         </LinearLayout>
     </HorizontalScrollView>
-
 </LinearLayout>

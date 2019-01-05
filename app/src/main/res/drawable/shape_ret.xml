@@ -1,7 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/cursorColor"/>
+        </shape>
+    </item>
+    <item android:right="0.4dp" android:top="0.5dp">
+        <shape>
+            <solid android:color="#fff"/>
+        </shape>
+    </item>
+</layer-list>
 
-<shape xmlns:android="http://schemas.android.com/apk/res/android" >
-    <solid android:color="@android:color/white" />
-    <stroke
-        android:width="0.5dp"
-        android:color="@color/blackColor" />
-</shape>
+
+    <!--<shape>-->
+        <!--<solid android:color="#e5e5e5" />//边框颜色-->
+    <!--</shape>-->
+<!--</item>-->
+<!--&lt;!&ndash;    想保留哪一边就设置哪一边边框，列如只有下边框：bottom="0.7dp"，相应的有上top="",left="",right=""    &ndash;&gt;-->
+<!--<item android:bottom="0.7dp">-->
+    <!--<shape>-->
+        <!--<solid android:color="@color/color_white" />//整个框背景颜色-->
+    <!--</shape>-->

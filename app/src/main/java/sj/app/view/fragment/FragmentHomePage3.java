@@ -31,7 +31,6 @@ public class FragmentHomePage3 extends Fragment {
     private String text;
     private ImageView iv;
     private String url;
-    private SwipeRefreshLayout swipeRefreshLayout;
     private String address;
 
     @Nullable
@@ -40,18 +39,6 @@ public class FragmentHomePage3 extends Fragment {
         view = inflater.inflate(R.layout.fragment_page3,container,false);
         tv = view.findViewById(R.id.tv_page3);
         iv = view.findViewById(R.id.iv_page3);
-
-//        swipeRefreshLayout = view.findViewById(R.id.swipeRefresh_page3);
-//        swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);//设置刷新按钮颜色
-//        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//            @Override
-//            public void onRefresh() {
-//                //手动刷新天气
-//                loadBingPic();
-//                onloadWeather();
-//
-//            }
-//        });
         return view;
     }
     @Override
@@ -76,6 +63,7 @@ public class FragmentHomePage3 extends Fragment {
                 }else{
                     tv.setText(result.location.getName()+"\n"+result.getNow().getText()+"\n"+result.last_update
                             +"\n"+result.now.getTemperature()+" ℃");
+                    //存储数据
                 }
             }
         });
